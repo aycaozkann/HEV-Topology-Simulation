@@ -21,3 +21,20 @@ Sistem verimliliğini maksimize etmek için Stateflow üzerinde üç ana sürü�
 Simülasyon sonuçlarına göre, seçilen FTP-75 sürüş çevriminde **Paralel Hibrit** modelinin, içten yanmalı motorun mekanik gücünü doğrudan tekerleklere aktarabilme (doğrudan tahrik) yeteneği sayesinde enerji dönüşüm kayıplarını azalttığı; buna bağlı olarak kümülatif yakıt tüketiminde ve emisyon salınımında Seri Hibrit modele kıyasla daha yüksek verimlilik sağladığı gözlemlenmiştir.
 
 > 📝 *Sistem parametreleri, aerodinamik kısıtlar ve matematiksel modellemelerin tüm detaylarını içeren kapsamlı proje raporuna repo içerisindeki PDF dosyasından ulaşabilirsiniz.*
+
+## 📈 Örnek Çıktılar
+
+FTP-75 sürüş çevrimi boyunca Seri ve Paralel modellerin karşılaştırmalı simülasyon sonuçları (kaynak: proje raporu, Şekil 5.1–5.3):
+
+**Batarya SOC değişimi**
+![Batarya SOC Değişimi](images/soc_karsilastirma.png)
+
+**Toplam eşdeğer yakıt tüketimi**
+![Yakıt Tüketimi](images/yakit_tuketimi.png)
+
+**Kümülatif CO₂ emisyon salınımı**
+![CO2 Emisyonu](images/co2_emisyon.png)
+
+## English Summary
+
+This project models and compares series and parallel hybrid-electric-vehicle (HEV) powertrain topologies in MATLAB/Simulink and Stateflow, using rule-based energy management strategies (EV-only, hybrid, and regenerative-braking modes) tested under the standard FTP-75 drive cycle. Results show the parallel hybrid model achieves lower cumulative fuel consumption and CO₂ emissions than the series model, due to its ability to transfer the internal combustion engine's mechanical power directly to the wheels rather than through a series electrical conversion chain. The full report (system parameters, aerodynamic assumptions, and mathematical modeling) is included as a PDF in this repository.
